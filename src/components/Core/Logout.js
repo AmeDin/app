@@ -1,25 +1,24 @@
-import React, { Component } from 'react'
-import { connect } from 'react-redux'
-import { NavItem } from 'reactstrap'
-import { PropTypes } from 'prop-types';
-import { logout } from '../../actions/authActions';
-import { NavLink } from 'react-router-dom'
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import { NavItem } from "reactstrap";
+import { PropTypes } from "prop-types";
+import { logout } from "../../actions/authActions";
+import { NavLink } from "react-router-dom";
 
 export class Logout extends Component {
-    static propTypes = {
-        logout: PropTypes.func.isRequired
-    }
+  static propTypes = {
+    logout: PropTypes.func.isRequired,
+  };
 
   render() {
     return (
-      <NavItem className="noBullet">    
-          <NavLink onClick={this.props.logout} to="#">
-            Logout
-          </NavLink>
-
+      <NavItem className="noBullet">
+        <NavLink onClick={this.props.logout} to="#">
+          Logout
+        </NavLink>
       </NavItem>
-    )
+    );
   }
 }
 
-export default connect(null, { logout })(Logout)
+export default connect(null, { logout })(Logout);
