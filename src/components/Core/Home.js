@@ -6,15 +6,12 @@ import {
   Form,
   Dropdown,
   DropdownToggle,
-  DropdownItem,
   DropdownMenu,
-  NavLink,
-  NavItem,
   Input,
   Button,
 } from "reactstrap";
 import { connect } from "react-redux";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 import MultiToggle from "react-multi-toggle-extra";
 
 class Home extends Component {
@@ -70,12 +67,7 @@ class Home extends Component {
     console.log("closeNavBartoggle");
   };
 
-  componentDidMount() {
-    const defaultSetting = {
-      isHiragana: this.state.isHiragana,
-      level: this.state.level,
-    };
-  }
+  componentDidMount() {}
 
   onChange = (e) => {
     this.setState({
@@ -128,7 +120,7 @@ class Home extends Component {
                         <input
                           type="radio"
                           value="All"
-                          checked={this.state.selectedOption === "All"}
+                          checked={this.state.selectedTypeOption === "All"}
                           onChange={this.onRadioTypeChange}
                         />
                       </Col>
@@ -141,7 +133,7 @@ class Home extends Component {
                         <input
                           type="radio"
                           value="HDB"
-                          checked={this.state.selectedOption === "HDB"}
+                          checked={this.state.selectedTypeOption === "HDB"}
                           onChange={this.onRadioTypeChange}
                         />
                       </Col>
@@ -154,7 +146,7 @@ class Home extends Component {
                         <input
                           type="radio"
                           value="Condo"
-                          checked={this.state.selectedOption === "Condo"}
+                          checked={this.state.selectedTypeOption === "Condo"}
                           onChange={this.onRadioTypeChange}
                         />
                       </Col>
@@ -167,7 +159,7 @@ class Home extends Component {
                         <input
                           type="radio"
                           value="Landed"
-                          checked={this.state.selectedOption === "Landed"}
+                          checked={this.state.selectedTypeOption === "Landed"}
                           onChange={this.onRadioTypeChange}
                         />
                       </Col>

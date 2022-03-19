@@ -18,6 +18,22 @@ export const getResales = () => (dispatch) => {
     );
 };
 
+export const getResalesByType = (type) => (dispatch) => {
+  console.log("getResales");
+  dispatch(setResalesLoading());
+  axios
+    .get("/api/resale/" + type)
+    .then((res) =>
+      dispatch({
+        type: GET_RESALES,
+        payload: res.data,
+      })
+    )
+    .catch((err) =>
+      dispatch(returnErrors(err.response.data, err.response.status))
+    );
+};
+
 export const setResalesLoading = () => {
   return {
     type: LOADING,
