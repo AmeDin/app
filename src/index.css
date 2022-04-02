@@ -12,6 +12,43 @@ code {
     monospace;
 }
 
+.home-header{
+  font-size: 30pt;
+  font-weight: bold;
+  color: #fbab01;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.checkboxy {
+  margin: 0.4em;
+}
+
+.region {
+  border: solid;
+  border-radius: 30px;
+  color: #fbab01;
+  margin-top: 2em!important;
+}
+
+.region-header{
+  font-size: 16pt;
+  font-weight: bold;
+  color: #fbab01;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 0.5em!important;
+  margin-bottom: 0.5em!important;
+  margin-left: 1em!important;
+
+}
+
+.spacer {
+  height: 1em;
+}
+
+.col-3 > label {
+  color: #959595;
+}
+
 .toggle-wrapper {
   margin: 0.5em auto;
 }
@@ -72,6 +109,24 @@ code {
 .noBullet {
   list-style-type: none;
   margin-left: 1em;
+  display:inline-block;
+  
+}
+
+.customGrey {
+  color: #959595!important;
+  text-decoration: none;
+  font-size: 16pt;
+}
+
+.collapse > li{
+  display:inline-block;
+  vertical-align:middle;
+}
+
+.collapse > li:last-child{
+  float: right;
+  margin-left: 40%;
 }
 
 .fit {
@@ -81,3 +136,63 @@ code {
   min-width: 100% !important;
   max-width: 100% !important;
 }
+
+.customInput{
+  width: 90%!important;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 20px!important;
+}
+
+.p-0 > label{
+  font-size: 10pt;
+}
+
+.filterWrapper {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,.125);
+}
+
+.filterHeader{
+  font-size: 15pt;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  color: #67BA4C;
+}
+
+.imgicon {
+  height: 15pt;
+  margin-right: 5px;
+}
+
+.accordion-body > .row > .col-3 {
+  padding-left: 10px;
+  padding-right: 0px;
+}
+
+.accordion-body > .row > .col-3 > label {
+  font-size: 10pt;
+}
+
+.accordion-body > .row > .col-2 > label {
+  padding-bottom: 0px;
+}
+
+.accordion-body > .row > .col-1  {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.cardText {
+  font-family: Arial;
+  font-size: 10pt;
+  color: #959595!important;
+  padding-left: 18px!important;
+}
+

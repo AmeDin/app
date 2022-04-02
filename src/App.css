@@ -1,5 +1,16 @@
 .App {
   text-align: center;
+  height: 800px!important;
+}
+
+.bg { 
+  background-image: url("assets/1x/bg_Home.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
 }
 
 .App-logo {
@@ -36,3 +47,4 @@
     transform: rotate(360deg);
   }
 }
+

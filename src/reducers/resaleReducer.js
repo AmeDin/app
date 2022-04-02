@@ -6,12 +6,13 @@ const initialState = {
 };
 
 export default function resaleFunction(state = initialState, action) {
+  console.log(action);
   switch (action.type) {
     case GET_RESALES:
-      console.log(action.payload);
+      console.log(action.payload.data.result);
       return {
         ...state,
-        resales: action.payload,
+        resales: action.payload.data.result.records,
         loading: false,
       };
     case LOADING:

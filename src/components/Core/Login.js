@@ -16,6 +16,7 @@ import { connect } from "react-redux";
 import { PropTypes } from "prop-types";
 import { login } from "../../actions/authActions";
 import { clearErrors } from "../../actions/errorActions";
+import LoginButton from "../../assets/1x/btn_Login.png";
 
 export class Login extends Component {
   state = {
@@ -77,7 +78,7 @@ export class Login extends Component {
     return (
       <NavItem className="noBullet">
         <NavLink onClick={this.toggle} to="#">
-          Login
+          <img src={LoginButton} alt="logo" />
         </NavLink>
         <Modal isOpen={this.state.modal} toggle={this.toggle}>
           <ModalHeader toggle={this.toggle}>Login</ModalHeader>
