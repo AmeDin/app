@@ -19,7 +19,10 @@ import SizeImg from "../../assets/1x/icon_Size.png";
 import PriceImg from "../../assets/1x/icon_Price.png";
 import CompletionImg from "../../assets/1x/icon_CompletionYear.png";
 import NoFavImg from "../../assets/1x/btn_AddToFavourite.png";
-import FavImg from "../../assets/1x/btn_RemoveFromFavourite.png";
+import A from "../../assets/1x/a.jpg";
+import B from "../../assets/1x/b.jpg";
+import C from "../../assets/1x/c.jpg";
+import D from "../../assets/1x/449.jpg";
 
 class Resale extends Component {
   constructor(props) {
@@ -87,7 +90,21 @@ class Resale extends Component {
     );
   }
 
-  renderCard(src) {
+  renderCard(type) {
+    var a = A;
+    switch (type) {
+      case "3 ROOM":
+        a = A;
+        break;
+      case "4 ROOM":
+        a = B;
+        break;
+      case "5 ROOM":
+        a = C;
+        break;
+      default:
+        a = D;
+    }
     return (
       <Card className="fit">
         <CardImg
@@ -97,7 +114,7 @@ class Resale extends Component {
             maxWidth: "100%",
             objectFit: "contain",
           }}
-          src={src}
+          src={a}
           fluid={true ? 1 : 0}
           alt="Card Image"
         />
@@ -712,9 +729,7 @@ class Resale extends Component {
                         <div className="cardInfo p-1" key={_id}>
                           <div className="row border">
                             <div className="col-4 col-md-4 p-0">
-                              {this.renderCard(
-                                "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                              )}
+                              {this.renderCard(flat_type)}
                             </div>
                             <div className="col-8 col-md-8 p-0">
                               <Container>
