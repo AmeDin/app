@@ -13,7 +13,7 @@ export class FavLink extends Component {
 
   render() {
     return (
-      <NavItem className="noBullet" style={{ marginLeft: "40%" }}>
+      <NavItem className="noBullet" style={{ marginLeft: "35%" }}>
         "
         <NavLink to="/fav">
           <img src={FavButton} alt="logo" />

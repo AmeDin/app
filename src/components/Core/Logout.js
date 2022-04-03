@@ -4,7 +4,7 @@ import { NavItem } from "reactstrap";
 import { PropTypes } from "prop-types";
 import { logout } from "../../actions/authActions";
 import { NavLink } from "react-router-dom";
-import LogoutButton from "../../assets/1x/btn_LogOut.png";
+import LogoutButton from "../../assets/1x/btn_LogOutIconDoor.png";
 
 export class Logout extends Component {
   static propTypes = {

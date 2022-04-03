@@ -64,6 +64,7 @@ class TopNavBar extends Component {
         </NavItem>
         <FavLink />
         <ProfileLink />
+        <Logout />
       </Fragment>
     );
 

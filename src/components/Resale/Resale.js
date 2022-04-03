@@ -108,7 +108,10 @@ class Resale extends Component {
     return (
       <Container>
         <Row style={{ marginTop: "20px", marginBottom: "20px" }}>
-          <div className="cardText">Town: &emsp; &emsp;{town}</div>
+          <div className="cardText">
+            Town: &emsp; &emsp;
+            {town.replace("BEDOK", "YISHUN").replace("SERANGOON", "YISHUN")}
+          </div>
           <div className="cardText">Flat Type: &nbsp; {flat_type}</div>
           <div className="cardText">Floor Area: {floor_area_sqm}</div>
           <div className="cardText">Build Year: {lease_commence_date}</div>
@@ -721,7 +724,8 @@ class Resale extends Component {
                                       Blk {block},{" "}
                                       {street_name
                                         .replace("YISHUN AVE 3", "YISHUN AVE 4")
-                                        .replace("BEDOK", "YISHUN")}{" "}
+                                        .replace("BEDOK", "YISHUN")
+                                        .replace("SERANGOON", "YISHUN")}{" "}
                                     </h6>
                                   </Col>
                                   <Col xs="2">
