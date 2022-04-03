@@ -14,6 +14,8 @@ import { PropTypes } from "prop-types";
 import Login from "../Core/Login";
 import Logout from "../Core/Logout";
 import Logo from "../../assets/1x/logo.png";
+import { FavLink } from "./../Core/FavLink";
+import { ProfileLink } from "../Core/ProfileLink";
 
 class TopNavBar extends Component {
   state = {
@@ -43,16 +45,25 @@ class TopNavBar extends Component {
     const authLinks = (
       <Fragment>
         <NavItem className="noBullet">
-          <NavLink to="/resale" onClick={this.closeNavBartoggle}>
+          <NavLink
+            to="/resale"
+            className="customGrey"
+            onClick={this.closeNavBartoggle}
+          >
             Resale
           </NavLink>
         </NavItem>
         <NavItem className="noBullet">
-          <NavLink to="/mortage" onClick={this.closeNavBartoggle}>
+          <NavLink
+            to="/mortage"
+            className="customGrey"
+            onClick={this.closeNavBartoggle}
+          >
             Mortage
           </NavLink>
         </NavItem>
-        <Logout />
+        <FavLink />
+        <ProfileLink />
       </Fragment>
     );
 

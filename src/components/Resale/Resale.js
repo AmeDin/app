@@ -124,6 +124,9 @@ class Resale extends Component {
                 backgroundColor: "#fbab01",
                 border: "none",
               }}
+              onClick={() => {
+                this.props.history.push("/details");
+              }}
             >
               See More
             </Button>
@@ -715,7 +718,10 @@ class Resale extends Component {
                                 <Row style={{ marginTop: "15px" }}>
                                   <Col xs="10">
                                     <h6 className="m-1">
-                                      Blk {block}, {street_name}{" "}
+                                      Blk {block},{" "}
+                                      {street_name
+                                        .replace("YISHUN AVE 3", "YISHUN AVE 4")
+                                        .replace("BEDOK", "YISHUN")}{" "}
                                     </h6>
                                   </Col>
                                   <Col xs="2">

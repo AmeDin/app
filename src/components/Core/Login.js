@@ -76,7 +76,7 @@ export class Login extends Component {
     console.log(this.props);
     console.log(this.state);
     return (
-      <NavItem className="noBullet">
+      <NavItem className="noBullet" style={{ marginLeft: "40%" }}>
         <NavLink onClick={this.toggle} to="#">
           <img src={LoginButton} alt="logo" />
         </NavLink>
@@ -106,7 +106,11 @@ export class Login extends Component {
                   className="mb-3"
                   onChange={this.onChange}
                 />
-                <Button color="dark" style={{ marginTop: "2rem" }} block>
+                <Button
+                  className="btn btn-warning"
+                  style={{ marginTop: "2rem", color: "white" }}
+                  block
+                >
                   Login
                 </Button>
               </FormGroup>

@@ -403,7 +403,13 @@ class Home extends Component {
                     marginTop: "5em",
                   }}
                 >
-                  <img src={ButtonSearch} alt="btnSearch" />
+                  <img
+                    src={ButtonSearch}
+                    alt="btnSearch"
+                    onClick={() => {
+                      this.props.history.push("/resale");
+                    }}
+                  />
                 </Button>
               </Col>
             </Row>

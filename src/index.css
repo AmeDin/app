@@ -119,15 +119,19 @@ code {
   font-size: 16pt;
 }
 
+.grey {
+  color: #959595!important;
+}
+
 .collapse > li{
   display:inline-block;
   vertical-align:middle;
 }
 
-.collapse > li:last-child{
+/* .collapse > li:last-child{
   float: right;
   margin-left: 40%;
-}
+} */
 
 .fit {
   margin: auto;
@@ -196,3 +200,9 @@ code {
   padding-left: 18px!important;
 }
 
+.imgdetail {
+    width: 100%; /* or any custom size */
+    height: 100%; 
+    object-fit: contain;
+    cursor: pointer;
+}
