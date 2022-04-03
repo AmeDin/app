@@ -74,7 +74,7 @@ class Resale extends Component {
   };
 
   onRadioTypeChange(event) {
-    const q = event.target.value == "Reset" ? "" : event.target.value;
+    const q = event.target.value == "All" ? "" : event.target.value;
     const data = {
       limit: 5,
       q: q,
@@ -395,8 +395,8 @@ class Resale extends Component {
                         <Col xs="1">
                           <input
                             type="radio"
-                            value="Reset"
-                            checked={this.state.selectedTypeOption === "Reset"}
+                            value="All"
+                            checked={this.state.selectedTypeOption === "All"}
                             onChange={this.onRadioTypeChange}
                           />
                         </Col>
@@ -405,7 +405,7 @@ class Resale extends Component {
                           style={{ textAlign: "left" }}
                           className="m-0 p-0"
                         >
-                          <label htmlFor="Reset">All</label>
+                          <label htmlFor="All">All</label>
                         </Col>
                         <Col xs="1">
                           <input
@@ -474,8 +474,8 @@ class Resale extends Component {
                         <Col xs="1">
                           <input
                             type="radio"
-                            value="Reset"
-                            checked={this.state.selectedTypeOption === "Reset"}
+                            value="All"
+                            checked={this.state.selectedTypeOption === "All"}
                             onChange={this.onRadioSizeTypeChange}
                           />
                         </Col>
@@ -484,7 +484,7 @@ class Resale extends Component {
                           style={{ textAlign: "left" }}
                           className="m-0 p-0"
                         >
-                          <label htmlFor="Reset">All</label>
+                          <label htmlFor="All">All</label>
                         </Col>
                         <Col xs="1">
                           <input
