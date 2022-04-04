@@ -3,7 +3,7 @@ import { Container, Row, Col } from "reactstrap";
 import BedImg from "../../assets/1x/bath.jpg";
 import DiningImg from "../../assets/1x/dining.jpg";
 import RoomImg from "../../assets/1x/room.jpg";
-import DetailImg from "../../assets/1x/detail3.PNG";
+import DetailImg from "../../assets/1x/detail4.PNG";
 
 class DetailsCompare extends Component {
   render() {
