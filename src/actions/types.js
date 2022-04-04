@@ -8,3 +8,5 @@ export const LOGIN_FAIL = "LOGIN_FAIL";
 export const LOGOUT_SUCCESS = "LOGOUT_SUCCESS";
 export const GET_RESALES = "GET_RESALES";
 export const LOADING = "LOADING";
+export const ADD_FAVOURITE = "ADD_FAVOURITE";
+export const DELETE_FAVOURITE = "DELETE_FAVOURITE";
