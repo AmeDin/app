@@ -113,6 +113,20 @@ export class Login extends Component {
                 >
                   Login
                 </Button>
+                <Button
+                  className="btn btn-secondary"
+                  style={{ marginTop: "2rem", color: "white" }}
+                  block
+                >
+                  Forget password
+                </Button>
+                <Button
+                  className="btn btn-secondary"
+                  style={{ marginTop: "2rem", color: "white" }}
+                  block
+                >
+                  Sign up
+                </Button>
               </FormGroup>
             </Form>
           </ModalBody>

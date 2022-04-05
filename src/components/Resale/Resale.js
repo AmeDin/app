@@ -135,7 +135,7 @@ class Resale extends Component {
         </Row>
         <Row className="p-1">
           <Col xs="8">
-            <h3 style={{ color: "#67BA4C" }}>{this.currencyFormat(price)}</h3>
+            <h3 style={{ color: "#fbab01" }}>{this.currencyFormat(price)}</h3>
           </Col>
           <Col xs="4">
             <Button
